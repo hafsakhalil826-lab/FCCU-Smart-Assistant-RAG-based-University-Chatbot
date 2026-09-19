@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('stars_img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  color: white;
+}
+
+
+#top {
+  
+  text-align: center;
+  padding-top: 200px;
+}
+
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ---------- Chatbot Header (Top-Left) ---------- */
+.chatbot-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.chatbot-icon i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.chatbot-title {
+  font-weight: bold;
+}
+
+/* ---------- Chat Window ---------- */
+#chat-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  background-color: #1e1e1e;
+  padding-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  height: 600px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin: 20px auto;
+}
+
+/* ---------- Message Container ---------- */
+.message {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  justify-content: flex-start;
+  font-size: medium;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+/* ---------- Bot Message Bubble ---------- */
+.inside-box {
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  max-width: 70%;
+  text-align: left;
+}
+
+.inside-box p {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 2px 0;
+}
+
+/* ---------- User Message Bubble ---------- */
+.user-box {
+  background-color: #4caf50;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  max-width: 70%;
+  text-align: right;
+}
+
+.user-box p {
+  font-size: small;
+  line-height: 1.2;
+  margin: 2px 0;
+  font-size: 20px;
+}
+
+/* ---------- Input Area ---------- */
+#input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+/* ---------- Buttons ---------- */
+#send-btn,
+#mic-btn,
+#clear-btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#mic-btn i {
+  font-size: 16px;
+}
+
+/* Hover & Click Effects */
+#send-btn:hover,
+#mic-btn:hover,
+#clear-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#send-btn:active,
+#mic-btn:active,
+#clear-btn:active {
+  background-color: #003f7f;
+  transform: scale(0.98);
+}
+
+/* ---------- Responsive Design ---------- */
+@media screen and (max-width: 600px) {
+  #chat-window,
+  #input-area {
+    width: 95%;
+    max-width: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

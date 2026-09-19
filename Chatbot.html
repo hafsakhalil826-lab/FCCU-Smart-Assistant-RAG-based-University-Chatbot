@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Project Chatbot</title>
+  <link rel="stylesheet" href="Chatbot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+</head>
+<body>
+  <div class="chatbot-header">
+    <div class="chatbot-icon">
+      <i class="fa-brands fa-rocketchat"></i>
+    </div>
+  </div>
+
+  <div class="top" style="text-align: center;">
+    <h1>Welcome to the FCCU Chatbot!</h1>
+    <p>Any query of yours will be solved here.</p></div>
+    <div id="chat-window">
+
+  <div class="message bot-message">
+    <div class="inside-box">
+      <p>Hey there 👋</p>
+      <p>How can I help you Today?</p>
+    </div>
+  </div>
+
+  <div class="message user-message">
+    <div class="user-box">
+      <p>The user message is here!</p>
+    </div>
+  </div>
+</div>
+
+<div id="input-area">
+    <input type="text" id="message-input" placeholder="Type your message here..." />
+    <button id="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+    <button id="send-btn">Send</button>
+    <button id="clear-btn">Reset</button>
+</div>
+
+
+  <script src="Chatbot.js"></script>
+
+</body>
+</html>
+
